@@ -1,9 +1,15 @@
 import './OurMission.css'
+import cansat2021 from '../../Pages/cansat2021/cansat2021.jsx';
+import SACup2021 from '../../Pages/SACup2021/SACup2021.jsx';
+import events from '../../Pages/Events/Events.jsx';
+import bm from "../../assets/HomePage/bookmark.png";
+import {Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import React,{useEffect} from 'react';
 import Zoom from 'react-reveal/Zoom';
 import AOS from "aos";
 import "aos//dist/aos.css";
-import bm from "../../assets/HomePage/bookmark.png";
+
 
 
 const OurMission = () => {
@@ -66,6 +72,13 @@ const OurMission = () => {
                     </div>
                 <div className = 'ourm-text-1'>The team followed up with a 20th rank worldwide. Currently the team holds the personal best ranking of 13th Worldwide in Cansat 2021. Adding to that, the team achieved this feat while working remotely due to the Covid-19 pandemic with members spread across the entire country. This makes this result even more special for the entire team.</div>
                 <br/><br/>
+                <div style={{textAlign:"center"}}>
+                    <Link to="/cansat2021" >
+            <Button style={{ backgroundColor:"#f15831", fontSize:"22px",border:"none", 
+            width:"200px"
+            }}> Learn More </Button></Link>
+             </div>
+                <br/><br/>
             </div>
         </div>
 
@@ -81,6 +94,13 @@ const OurMission = () => {
                 </div>
                 <div className = 'ourm-text-1'> It’s definitely not as easy as the quote suggests, but it was an enriching experience for the team that would exponentially help to increase the knowledge base of all the members. After taking part in the first and the only Spaceport America Cup till date, we achieved a ranking of 23rd worldwide in 10k COTS (Commercial Off the Shelf) category – one of the six categories of rockets in the competition.</div>
                 <br/><br/>
+                <div style={{textAlign:"center"}}>
+                <Link to="/SACup2021" >
+            <Button  style={{ backgroundColor:"#f15831", fontSize:"22px",border:"none", 
+            width:"200px"
+            }}> Learn More </Button></Link>
+             </div>
+                <br/><br/>
             </div>
         </div>
         <h1 className="comp-head">outreach events</h1>
@@ -95,6 +115,13 @@ const OurMission = () => {
                 </div>
                 <div className = 'ourm-text-1'>Vellore Institute of Technology provides a space for innovators. The college provides a constructive community where we meet like minded individuals. Team Sammard was a resultant of such environment. VIT has high class facilities and machinery required to solve any sort of real life problem statements. Our team came together to learn and share the knowledge we gain</div>
                 <br/><br/>
+                <div style={{textAlign:"center"}}>
+                <Link to="/events" >
+            <Button style={{ backgroundColor:"#f15831", fontSize:"22px",border:"none", 
+            width:"200px"
+            }}> Learn More </Button></Link>
+             </div>
+                <br/><br/>
         
                 
             </div>
@@ -106,7 +133,7 @@ const OurMission = () => {
 }
 
 export default OurMission
-        
+
        
        
             
